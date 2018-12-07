@@ -1,2 +1,2 @@
 #!/bin/sh
-gulp prepare-backend
+gulp prepare_backend
