@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-  - "9.6.1"
+  - "9.6"
 before_script:
-  - npm i -g gulp-cli
-  script: npm test
-  deploy:
-    provider: script
-    script: deploy.sh
-    on:
-      branch: develop
+  - npm install -g gulp-cli
+script: npm run test
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    branch: develop
